@@ -1,0 +1,112 @@
+
+\documentstyle[times,11pt,verbatim,js-singlespace]{article}  % 10pt default?
+
+\title{COSC6340: Database Systems\\
+Final Exam-Take Home
+}
+
+\author{}
+\date{}
+
+\begin{document}
+\special{papersize=8.5in,11in}
+
+
+\pagestyle{plain}
+\let\thepage\relax  % no page number
+
+\maketitle
+
+\subsection*{PS id:}
+
+\subsection*{Test score:}
+
+
+\subsection*{Instructions}
+
+There are two kinds of questions.
+For theory questions you are asked to rewrite the definition, general explanation or
+theoretical result, given in the textbook. 
+You should {\em rewrite} it in your own words, but using the same notation.
+For example questions you should change the examples in the book as much as possible.
+At the minimum different data, but also different table, column names to make
+your answer more unique.
+You should avoid taking examples from other textbooks, especially if math notation is different.
+You can add and explain all required assumptions to support your example.
+
+Important requirements:
+(1) every answer must be different for students in different teams.
+You can and are encouraged to solve the exam with your team partner.
+Therefore, some similarity of answers (but not equal answers!) 
+from students in the same team is acceptable.
+However, you can work individually. 
+(2) you cannot copy/paste information you find on any textbook, Wikipedia or Internet in general.
+If we detect plagiarism I will apply a significant penalty (50\% or more).
+(3) Submit as a DOC file named final-lastName.doc (example "final-Chen.doc").
+Use the old .DOC format to avoid compatibility problems.
+(4) E-mail to both TA and myself. Indicate if you worked alone or with your team partner.
+
+\subsection*{Theory Questions}
+
+\begin{enumerate}
+
+\item When is a table in 3NF, but not BCNF? 
+Give a general definition based on FDs.
+
+\item What is blocking factor and how does it related to I/O efficiency in a table scan
+and updating one record in transaction processing?
+
+\item Which relational operators are more likely to be evaluated earlier
+and which are not?
+Discuss what happens if columns are indexed or not.
+Consider aggregations (SPJA queries).
+
+\item Distinguish scanning, parsing, validation, plan generation and optimization phases in query evaluation.
+
+\item Explain serial, serializability in terms or read/write operations.
+
+\item Under concurrent processing explain when we can get: deadlocks, starvation, lost updates
+ and inconsistency.
+
+\item Compare advantages and disadvantages of 2PL and timestamping.
+
+\item Explain External Merge Sort on $n$ records using 2 buffers holding $k$ records each.
+
+\item Explain COMMIT and ROLLBACK in SQL. Explain implications for UNDO/REDO for the recovery manager.
+
+\item Explain hash join and sort-merge join between two tables $R,S$ with $n$ rows each.
+
+\end{enumerate}
+
+\subsection*{Example Questions}
+
+\begin{enumerate}
+\item Give an example of a SQL query that produces a cartesian product.
+
+\item Give an example of two lost updates among three transactions.
+
+\item Show a RAID 10 example with $M=8$ disks, chunk size four times block size.
+
+\item Show C++ code to seek and write the $i$th record on a large binary file
+having records with two integer columnson table  $T(i,h)$.
+
+\item Show an example of a query where pushing $\sigma$ is good.
+Show an example of a query where pushing $\pi$ is bad.
+
+\item Show an example of the wound-wait protocol and explain how deadlock is eliminated.
+
+\item Show a deadlock example with 4 transactions, where the wait graph $G$ has a 4-edge cycle.
+
+\item Give an SQL query example where table-level lock is preferable.
+Give an SQL query example where row-level lock is preferable.
+
+\item Show 3 different equivalent expressions for an SPJ query involving
+$\sigma,\pi,\Join$. Use relational algebra.
+
+\item Show an example of an insertion into a B+-tree with 3 levels
+that produces 4 levels with $p=2$ (max 2 keys per node, min 1 key per node).
+
+\end{enumerate}
+
+\end{document}
+

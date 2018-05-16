@@ -1,0 +1,5 @@
+# Install RCurl first
+apt-get install libcurl4-openssl-dev
+
+# Then in R, run:
+install.packages("scidb")

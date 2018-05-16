@@ -1,0 +1,5 @@
+SELECT A.name,
+       C.attid,
+       C.coord
+  FROM list('arrays') AS A CROSS JOIN list('chunk map') AS C
+ WHERE A.id = C.uaid AND A.name = '';

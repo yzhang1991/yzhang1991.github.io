@@ -1,0 +1,5 @@
+# Python normally comes with Ubuntu.
+# First need to install python numpy:
+apt-get install python-numpy
+apt-get install python-pip
+pip install scidb-py

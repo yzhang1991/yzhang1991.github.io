@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name=Generator content="Microsoft Word 15 (filtered)">
+    <title>Server access and the data sets for the first project</title>
+    <style>
+    <!--
+     /* Font Definitions */
+     @font-face
+        {font-family:ËÎÌå;
+        panose-1:2 1 6 0 3 1 1 1 1 1;}
+    @font-face
+        {font-family:"Cambria Math";
+        panose-1:2 4 5 3 5 4 6 3 2 4;}
+    @font-face
+        {font-family:"\@ËÎÌå";
+        panose-1:2 1 6 0 3 1 1 1 1 1;}
+     /* Style Definitions */
+     p.MsoNormal, li.MsoNormal, div.MsoNormal
+        {margin-top:0in;
+        margin-right:0in;
+        margin-bottom:8.0pt;
+        margin-left:0in;
+        line-height:107%;
+        font-size:11.0pt;
+        font-family:"Calibri",sans-serif;}
+    a:link, span.MsoHyperlink
+        {color:blue;
+        text-decoration:underline;}
+    a:visited, span.MsoHyperlinkFollowed
+        {color:#954F72;
+        text-decoration:underline;}
+    pre
+        {mso-style-link:"HTML Preformatted Char";
+        margin:0in;
+        margin-bottom:.0001pt;
+        font-size:10.0pt;
+        font-family:"Courier New";}
+    span.apple-converted-space
+        {mso-style-name:apple-converted-space;}
+    span.HTMLPreformattedChar
+        {mso-style-name:"HTML Preformatted Char";
+        mso-style-link:"HTML Preformatted";
+        font-family:"Courier New";}
+    .MsoChpDefault
+        {font-family:"Calibri",sans-serif;}
+    .MsoPapDefault
+        {margin-bottom:8.0pt;
+        line-height:107%;}
+    @page WordSection1
+        {size:8.5in 11.0in;
+        margin:1.0in 1.0in 1.0in 1.0in;}
+    div.WordSection1
+        {page:WordSection1;}
+    -->
+    </style>
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-96078041-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- The out-most frame -->
+    <div id="pageframe">
+        <!-- Nevigate bar -->
+        <div id="nevigatebar">
+            <table id="linktable" cellspacing="5px">
+                <tr>
+                    <!-- Navigation items -->
+                    <td class="navilink" width="50px" >
+                        <a class="navilink" href="../../home.html">Home</a>
+                    </td>
+                    <td class="navilink" width="40px">
+                        <a class="navilink" href="../../research/home.html">Research</a>
+                    </td>
+                    <td class="navilink" width="170px">
+                        <a class="navilink" href="../home.html">Teaching Assistant</a>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="contentpanel">
+            <!-- The title of the panel -->
+            <h1 class="contentpanel">
+                Server access and the data sets for the first project
+            </h1>
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>We have chosen two data sets for your first project:</span></p>
+            <p id="pcontent"><b><span style='font-family:"Times New Roman",serif;
+            color:#222222'>Iris Data Set:&nbsp;</span></b><span style='
+            font-family:"Times New Roman",serif;color:#222222'><a
+            href="http://archive.ics.uci.edu/ml/datasets/Iris" target="_blank"><span
+            style='color:#6611CC;text-decoration:none'>http://archive.ics.uci.edu/ml/datasets/Iris</span></a></span> <br />
+            <b><span style='font-family:"Times New Roman",serif;
+            color:#222222;background:white'>Pima Indians Diabetes Data Set:&nbsp;</span></b><span
+            style='font-family:"Times New Roman",serif'><a
+            href="https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes"
+            target="_blank"><span style='color:#6611CC;background:white;
+            text-decoration:none'>https://archive.ics.uci.edu/ml/datasets/Pima+Indians+Diabetes</span></a></span>
+            <span style='font-family:"Times New Roman",serif;color:#222222'></p>
+            <p id="pcontent"><span style='background:white'>You can download the csv file from the UCI
+            machine learning repository to try solely in R. If you want to proceed and try
+            it in SciDB+R, we have already loaded those two data sets in our SciDB server.
+            The arrays are named &quot;iris&quot; and &quot;diabetes&quot;.</span></span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>Please note that in the Iris data set the target class is
+            represented by a string. For convenience purposes when we imported the Iris
+            data into SciDB, we replaced the target class with integers starting from 0:</span></p>
+
+            <p id="pcontent"><span style='font-family:"Courier New";
+            color:#222222'>Old target &nbsp; &nbsp; &nbsp; New target</span> <br />
+            <span style='font-family:"Courier New";
+            color:#222222'>Iris-setosa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0</span> <br />
+            <span style='font-family:"Courier New";
+            color:black'>Iris-versicolor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            1</span> <br />
+            <span style='font-family:"Courier New";
+            color:black'>Iris-virginica&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            2</span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>In order to finish the project, first you need to install R on
+            your own computer. The version I recommend is R 3.2.3. <br />
+            The download links are provided below:</span></p>
+
+            <p id="pcontent"><b><span style='font-family:"Times New Roman",serif;
+            color:#222222'>Windows:&nbsp;</span></b><span style='
+            font-family:"Times New Roman",serif;color:#222222'><a
+            href="https://cran.r-project.org/bin/windows/base/" target="_blank"><span
+            style='color:#6611CC;text-decoration:none'>https://cran.r-project.org/bin/windows/base/</span></a></span><br />
+            <b><span style='font-family:"Times New Roman",serif;
+            color:#222222'>Mac OS X:&nbsp;</span></b><span style='
+            font-family:"Times New Roman",serif;color:#222222'><a
+            href="https://cran.r-project.org/bin/macosx/" target="_blank"><span
+            style='color:#6611CC;text-decoration:none'>https://cran.r-project.org/bin/macosx/</span></a></span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>If you are using Linux operating systems such as Ubuntu, you
+            should refer to&nbsp;<a
+            href="https://cran.r-project.org/bin/linux/ubuntu/README" target="_blank"><span
+            style='color:#6611CC;text-decoration:none'>https://cran.r-project.org/bin/linux/ubuntu/README</span></a>&nbsp;for
+            more information.</span> <br />
+            <span style='font-family:"Times New Roman",serif;
+            color:#222222'>Once you have R correctly installed, you can run the following
+            commands to install the SciDB-R package:</span></p>
+
+            <p id="pcontent"><span style='font-family:"Courier New";
+            color:#222222'>install.packages('devtools')<br />
+            devtools::install_github(&quot;Paradigm4/SciDBR&quot;)</span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>The second command may take longer in Mac OS X and Linux. Please
+            note that if you are using R on Windows platforms, you also need to install
+            Rtools in addition to the R binaries in order to be able to run the commands
+            above.</span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>The SciDB-R library can be loaded by running:</span></p>
+
+            <p id="pcontent"><span style='font-family:"Courier New";
+            color:#222222'>library('scidb')</span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>To connect to our SciDB server, run:</span></p>
+
+            <p id="pcontent"><span style='font-family:"Courier New";color:#222222'>scidbconnect('[server address]',8080L)</span><span
+            style='font-family:"Times New Roman",serif;color:#222222'><br />
+            <br />
+            The server address is now available both on and off campus.</span></p>
+
+            <p id="pcontent"><span style='font-family:"Times New Roman",serif;
+            color:#222222'>A brief introduction to SciDB-R can be found here:&nbsp;<a
+            href="http://www.paradigm4.com/try_scidb/scidb-r/" target="_blank"><span
+            style='color:#6611CC;text-decoration:none'>http://www.paradigm4.com/try_scidb/scidb-r/</span></a><br />
+            Below is a code snippet to connect to the SciDB server using the R library and
+            compute the Gamma matrix on the Iris data set:</span></p>
+
+            <p id="pcontent"><span style='font-family:"Courier New";
+            color:#222222'>library('scidb')<br />
+            scidbconnect('[server address]',8080L)</span><span style='
+            font-family:"Times New Roman",serif;color:#222222'><br />
+            <br />
+            </span><span style='font-family:"Courier New";color:#222222'>arrName=&quot;iris&quot;<br />
+            strquery = paste(&quot;DenseGamma(&quot;, arrName, &quot;);&quot;,
+            sep=&quot;&quot;)<br />
+            Gamma_vertical = iquery(strquery, return=TRUE)<br />
+            d = max(Gamma_vertical$i)<br />
+            Gamma = matrix(0, nrow=d, ncol=d)<br />
+            k = 1<br />
+            for (i in 1:d)<br />
+            for (j in 1:d) {<br />
+            &nbsp; Gamma[i,j] = Gamma_vertical[k,3]<br />
+            &nbsp; k = k+1<br />
+            }</span><span style='font-family:"Times New Roman",serif;
+            color:#222222'><br />
+            <br />
+            You can also use the web interactive SciDB console at&nbsp;</span><span
+            style='font-family:"Courier New";color:#222222'>http://[server address]:8080/query.html</span><span
+            style='font-family:"Times New Roman",serif;color:#222222'>&nbsp;to
+            play with the SciDB query language (AFL and AQL).</span></p>
+
+            <p class=MsoNormal><span style='font-size:16.0pt;line-height:107%;font-family:
+            "Times New Roman",serif'>&nbsp;</span></p>
+        </div>
+    </body>
+</html>

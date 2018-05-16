@@ -1,0 +1,5 @@
+# Install openmpi first:
+apt-get install -y openmpi1.5-bin openmpi1.5-doc libopenmpi1.5-dev
+
+# Enter R and run:
+install.packages("pbdMPI")

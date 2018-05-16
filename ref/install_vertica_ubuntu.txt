@@ -1,0 +1,17 @@
+# Add a user "dbadmin" with home directory
+useradd -m dbadmin
+# Set password
+passwd dbdmin
+# Add user "dbadmin" too sudo group.
+gpasswd -a dbadmin sudo
+# Configure ssh authentication
+# apt-get install some packages:
+apt-get install ntp
+apt-get install pstack
+apt-get install mcelog
+apt-get install sysstat
+apt-get install tzdata
+# Configure hosts file at /etc/hosts
+# Configure disk read ahead setting:
+/sbin/blockdev --setra 2048 /dev/sda1
+# Put it in the /etc/rc.local

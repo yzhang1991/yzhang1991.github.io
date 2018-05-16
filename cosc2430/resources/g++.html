@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+    <!-- The title of the page -->
+    <title>Getting started with g++</title>
+
+</head>
+
+<body>
+
+    <!-- The out-most frame -->
+    <div id="pageframe">
+
+        <div class="contentpanel">
+            <!-- The title of the panel -->
+            <h1 class="contentpanel">
+                If you are running Windows:
+            </h1>
+            <ul>
+                <li>
+                    Go to the Cygwin <a href="https://cygwin.com/install.html">installation</a> page to download the installer that suits your machine. <br>
+                    Please note that the installers are different for 32-bit and 64-bit machines.
+                </li>
+                <li>
+                    Install the Cygwin following the video <a href="https://www.youtube.com/watch?v=ziRGT-8Td40">here</a>.
+                </li>
+            </ul>
+        </div>
+        <div class="contentpanel">
+            <!-- The title of the panel -->
+            <h1 class="contentpanel">
+                If you are running Ubuntu:
+            </h1>
+            <ul>
+                <li>
+                    The commands you might be looking for are: <br>
+                    <font face="Courier New">
+                        sudo apt-get install build-essential <br>
+                        sudo apt-get install g++
+                    </font>
+                </li>
+            </ul>
+        </div>
+        <div class="contentpanel">
+            <!-- The title of the panel -->
+            <h1 class="contentpanel">
+                If you are running OS X:
+            </h1>
+            <ul>
+                <li>
+                    Install homebrew by executing the following command in the Terminal: <br>
+                    <font face="Courier New">
+                        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+                    </font>
+                </li>
+                <li>
+                    Run:
+                    <font face="Courier New">
+                        brew install gcc48 <br>
+                    </font>
+                    Note that the default version of gcc installed by homebrew may be 5.x, but our lab will use gcc 4.8.
+                </li>
+            </ul>
+        </div>
+        <div class="contentpanel">
+            <!-- The title of the panel -->
+            <h1 class="contentpanel">
+                Hello World with g++
+            </h1>
+            <ul>
+                <li>
+                    Create the following Hello World program <i>hello-world.cpp</i> <br>
+                    <font face="Courier New">
+                        #include&lt;iostream&gt;<br>
+                        using namespace std;<br>
+                        int main (int argc, char **argv)<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;&quot;Hello World!! &quot;&nbsp;&lt;&lt;&nbsp;endl;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
+                        }
+                    </font>
+                </li>
+                <li>
+                    Compile and run by executing:<br>
+                    <font face="Courier New">
+                        &gt; g++ -o hello-world hello-world.cpp 
+                    </font>
+                    (Linux or OS X) <br>
+                    <font face="Courier New">
+                        &gt; g++ -o hello-world.exe hello-world.cpp 
+                    </font>
+                    (Windows) <br>
+                </li>
+            </ul>
+        </div>
+</body>
+</html>

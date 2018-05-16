@@ -1,0 +1,15 @@
+export SCIDB_VER="13.12"
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+export JRE_HOME="$JAVA_HOME/jre"
+export CLASSPATH="$JAVA_HOME/lib/rt.jar:$JRE_HOME/lib:$JAVA_HOME/lib/vertica-jdbc-7.0.0-0.jar:$JAVA_HOME/lib/vertica-jdk5-6.1.3-0.jar:."
+export PATH="$PATH:/opt/scidb/$SCIDB_VER/bin:/opt/scidb/$SCIDB_VER/share/lib:$JAVA_HOME/bin:/opt/vertica/bin:."
+export LD_LIBRARY_PATH="/opt/scidb/$SCIDB_VER/lib"
+alias dbms='ssh dbms@linux04.cs.uh.edu'
+alias db1='ssh scidb@129.7.243.241'
+alias r1='ssh root@129.7.243.241'
+alias db2='ssh dbadmin@129.7.243.242'
+alias r2='ssh root@129.7.243.242'
+alias db3='ssh scidb@129.7.243.243'
+alias r3='ssh root@129.7.243.243'
+alias db4='ssh dbadmin@129.7.243.244'
+alias r4='ssh root@129.7.243.244'

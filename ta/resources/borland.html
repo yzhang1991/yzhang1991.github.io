@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+    <!-- The title of the page -->
+    <title>Getting started with Borland C++</title>
+
+</head>
+
+<body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-96078041-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- The out-most frame -->
+    <div id="pageframe">
+        <!-- Nevigate bar -->
+        <div id="nevigatebar">
+            <table id="linktable" cellspacing="5px">
+                <tr>
+                    <!-- Navigation items -->
+                    <td class="navilink" width="50px" >
+                        <a class="navilink" href="../../home.html">Home</a>
+                    </td>
+                    <td class="navilink" width="40px">
+                        <a class="navilink" href="../../research/home.html">Research</a>
+                    </td>
+                    <td class="navilink" width="170px">
+                        <a class="navilink" href="../home.html">Teaching Assistant</a>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div class="contentpanel">
+            <!-- The title of the panel -->
+            <h1 class="contentpanel">
+                Getting started with Borland C++
+            </h1>
+            <ul>
+                <li>Click <a href="borland.exe">here</a> to download the Borland C++ compiler.</li>
+                <li>Add to your local path, the bin folder of the Borland Compiler (e.g. C:\Borland\BCC55\Bin)</li>
+                <li>
+                    In the bin folder:
+                    <ul>
+                        <li>
+                            Create a new file &quot;bcc32.cfg&quot; and add the following content:<br>
+                            <font face="Courier New">
+                                -I&quot;C:\Borland\Bcc55\include&quot;<br>
+                                -L&quot;C:\Borland\Bcc55\lib&quot;
+                            </font>
+                        </li>
+                        <li>
+                            Create a new file &quot;ilink32.cfg&quot; and add the following content:<br>
+                            <font face="Courier New">
+                                -L&quot;C:\Borland\Bcc55\lib&quot;
+                            </font>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Test your environment with the popular Hello World program:<br>
+                    <font face="Courier New">
+                        #include&lt;iostream&gt;<br>
+                        using namespace std;<br>
+                        int main (int argc, char **argv)<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;&quot;Hello World!! &quot;&nbsp;&lt;&lt;&nbsp;endl;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
+                        }
+                    </font>
+                </li>
+                <li>
+                    Compile and run as:<br>
+                    <font face="Courier New">
+                        &gt; bcc32 HelloWorld.cpp<br>
+                        &gt; HelloWorld.exe</li>
+                    </font>
+                </li>
+            </ul>
+        </div>
+</body>
+</html>

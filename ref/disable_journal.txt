@@ -1,0 +1,21 @@
+ext4 disable journal
+At one high loaded web project I needed a very fast file system. I decided to use Ext4 with disabled journal (As a google:))).
+
+# Create ext4 fs on /dev/sda10 disk
+mkfs.ext4 /dev/sda10
+
+# Enable writeback mode. This mode will typically provide the best ext4 performance.
+tune2fs -o journal_data_writeback /dev/sda10
+
+# Delete has_journal option
+tune2fs -O ^has_journal /dev/sda10
+
+# Required fsck
+e2fsck -f /dev/sda10
+
+# Check fs options
+dumpe2fs /dev/sda10 |more
+
+For more performance add fstab opions: data=writeback,noatime,nodiratime
+i.e:
+/dev/sda10 /opt ext4 defaults,data=writeback,noatime,nodiratime 0 0
